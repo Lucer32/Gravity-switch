@@ -26,7 +26,7 @@ label.BorderColor3 = Color3.fromRGB(0, 0, 0)
 label.BorderSizePixel = 0
 label.Size = UDim2.new(1, 0, 0.294736832, 0)
 label.Font = Enum.Font.Gotham
-label.Text = "On"
+label.Text = "Zero Gravity"
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextScaled = true
 label.TextSize = 29.000
@@ -35,7 +35,7 @@ label.TextWrapped = true
 UITextSizeConstraint.Parent = label
 UITextSizeConstraint.MaxTextSize = 29
 
-button.Name = "button"
+button.Name = "МЕНЮ"
 button.Parent = main
 button.BackgroundColor3 = Color3.fromRGB(108, 108, 108)
 button.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -43,7 +43,7 @@ button.BorderSizePixel = 0
 button.Position = UDim2.new(0.0526315793, 0, 0.438756049, 0)
 button.Size = UDim2.new(0.894736826, 0, 0.431578934, 0)
 button.Font = Enum.Font.Gotham
-button.Text = "Click"
+button.Text = "Включить / Выключить"
 button.TextColor3 = Color3.fromRGB(255, 255, 255)
 button.TextSize = 24.000
 button.TextScaled = true
@@ -76,3 +76,4 @@ local function MUBRZ_fake_script() -- button.script
 		workspace.Gravity = normalGravity
 	end)
 end
+coroutine.wrap(MUBRZ_fake_script)()

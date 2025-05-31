@@ -26,7 +26,7 @@ label.BorderColor3 = Color3.fromRGB(0, 0, 0)
 label.BorderSizePixel = 0
 label.Size = UDim2.new(1, 0, 0.294736832, 0)
 label.Font = Enum.Font.Gotham
-label.Text = "Zero Gravity"
+label.Text = "Нулевая гравитация"
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextScaled = true
 label.TextSize = 29.000
@@ -64,7 +64,7 @@ local function MUBRZ_fake_script() -- button.script
 		workspace.Gravity = 0
 
 		local humanoid = plr.Character:FindFirstChildWhichIsA("Humanoid")
-		humanoid.Sit = true
+		humanoid.Sit = false
 		task.wait(0.1)
 		humanoid.RootPart.CFrame = humanoid.RootPart.CFrame * CFrame.Angles(math.pi * 0.5, 0, 0)
 		for _, v in ipairs(humanoid:GetPlayingAnimationTracks()) do
